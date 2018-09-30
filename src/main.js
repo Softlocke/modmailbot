@@ -29,6 +29,8 @@ const {ACCIDENTAL_THREAD_MESSAGES} = require('./data/constants');
 bot.on('ready', () => {
   bot.editStatus(null, {name: config.status});
   console.log('Connected! Now listening to DMs.');
+  console.log('Bot username is: ' + bot.user.username);
+  console.log('Bot ID is: ' + bot.user.id);
 });
 
 /**
